@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overscroll: scroll;
+    }
+
+    body {
+        font-size: 17px;
+        background-color: #111;
+        color: #fff;
+    }
+
+    #main {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-right: 17px;
+        box-sizing:content-box;
+        margin-top: 50px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times;
+    }
+
+    details {
+        width: 100%;
+        font-family: sans-serif;
+        border: 2px solid violet;
+        padding: 5px;
+    }
+
+    details p {
+        padding: 20px;
+        color: #000;
+        background: #fff;
+    }
+
+    summary {
+        padding: 20px;
+        border: 1px solid blue;
+        outline: none;
+        cursor: pointer;
+        display: flex;
+    }
+
+    section {
+        max-width: 80%;
+        width: 100%;
+
+    }
+
+    a {
+        color: rgb(47, 161, 236);
+        text-decoration: none;
+    }
+
+    h3 {
+        margin: 10px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        max-width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 5px solid rgb(248, 227, 188);
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 10px #272525;
+    }
+
+    figcaption {
+        margin: 20px;
+        font-size: 20px;
+        width: 55%;
+    }
+
+    #title {
+        color: orange;
+    }
+
+    #tribute-info {
+        width: 50%;
+    }
+
+    @media screen and (max-width:600px) {
+        figcaption {
+            width: 80%;
+            font-size: 15px;
+        }
+
+        #tribute-info {
+            width: 100%;
+        }
+
+        #main {
+            margin-top: 0;
+        }
+    }
+</style>
+
+<body>
+    <main id="main"></main>
+    <center>
+        
+        <h1 id="title">Dr. APJ Abdul Kalam</h1>
+        <p>Missle Man & President of India</p>
+        <div class="img-div">
+            <figure>
+                <img src="images.png" alt="" id="image" width="170" height="170">
+                <figcaption id="img-caption"><q><b>A.P.J. Abdul Kalam</b> in full Avul Pakir Jainulabdeen Abdul
+                        Kalam,(born October 15,1932, Rameswaram, India--died July 27,2015, Shillong), Indian scientist
+                        and politician who played a leading role in the development of India's missle and nuclear
+                        weapons programs. He was president of India from 2002 to 2007.</q>
+                </figcaption>
+            </figure>
+        </div>
+        <section id="tribute-info">
+            <details>
+                <summary> What is A.P.J. Abdul Kalam known for? </summary>
+                <p>A.P.J. Abdul Kalam served as president of the Republic of India from 2002 to 2007. As president,
+                    Kalam promoted the advancement of the national nuclear weapons program. Kalam also devised a
+                    20-year action plan to achieve economic growth through technological development in India.
+                </p>
+            </details>
+            <details>
+                <summary> What organizatons was A.P.J. Abdul Kalam associated with? </summary>
+                <p>A.P.J. Abdul Kalam attended the Madras Institute of Technology, where he received a degree in
+                    aeronautical engineering in 1960. After graduation he joined the Defence Research and Development
+                    Organisation (DRDO)-an Indian military research institute-and later the Indian Space
+                    Research Organisation (ISRO). Kalam's associations were not limited to research organizations:
+                    he was also associated with political groups, such as the National Democractic Alliance (NDA).
+                </p>
+            </details>
+            <h3>
+                Read more about "Dr A.P.J. ABDUL KALAM"
+                <a id="tribute link" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">'wikipedia'</a>
+            </h3>
+        </section>
+    </center>
+</body>
+
+</html>
